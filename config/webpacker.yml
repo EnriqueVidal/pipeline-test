@@ -19,6 +19,13 @@ default: &default
   # Extract and emit a css file
   extract_css: false
 
+  server_renderer_extensions:
+    - .jsx
+    - .js
+    - .tsx
+    - .ts
+
+
   static_assets_extensions:
     - .jpg
     - .jpeg

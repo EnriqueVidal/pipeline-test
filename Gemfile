@@ -6,6 +6,8 @@ ruby '2.6.4'
 gem "bulma-rails", "~> 0.8.2"
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'httparty'
+gem 'pry-rails', :group => :development
+gem 'react-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
