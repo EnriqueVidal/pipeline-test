@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 class PipelinesService
   include HTTParty
 
-  base_uri "https://api.pipelinedeals.com/api/v3"
+  base_uri 'https://api.pipelinedeals.com/api/v3'
 
-  def initialize(query={})
+  def initialize(query = {})
     @options = {
       query: query.merge({
-        api_key: $API_KEY,
-      }),
+                           api_key: $API_KEY
+                         })
     }
   end
 

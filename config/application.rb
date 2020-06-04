@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'boot'
 
 require 'rails/all'
@@ -12,7 +14,7 @@ module Pipeline
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
     config.autoload_paths += [
-      Rails.root.join("app/services"),
+      Rails.root.join('app/services')
     ]
 
     # Settings in config/environments/* take precedence over those specified here.

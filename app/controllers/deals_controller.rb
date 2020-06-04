@@ -1,14 +1,21 @@
+# frozen_string_literal: true
+
 class DealsController < ApplicationController
-  before_action :create_client, only: :index
+  before_action :service, only: :index
 
   def index
-    @deals = @service.fetch("/deals.json") rescue []
+    @deals = begin
+               service.fetch('/deals.json')
+             rescue StandardError
+               []
+             end
   end
 
   private
-  def create_client
+
+  def service
     @service ||= PipelinesService.new({
-      pages: params[:page] || 1,
-    })
+                                        pages: params[:page] || 1
+                                      })
   end
 end
