@@ -18,6 +18,7 @@ module.exports = function(api) {
   return {
     presets: [
       isTestEnv && [
+        '@babel/typescript',
         '@babel/preset-env',
         {
           targets: {
@@ -28,6 +29,7 @@ module.exports = function(api) {
         '@babel/preset-react'
       ],
       (isProductionEnv || isDevelopmentEnv) && [
+        '@babel/typescript',
         '@babel/preset-env',
         {
           forceAllTransforms: true,
@@ -70,12 +72,7 @@ module.exports = function(api) {
           corejs: false
         }
       ],
-      [
-        '@babel/plugin-transform-regenerator',
-        {
-          async: false
-        }
-      ],
+      '@babel/plugin-transform-regenerator',
       isProductionEnv && [
         'babel-plugin-transform-react-remove-prop-types',
         {

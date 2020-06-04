@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pipeline</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pipelines</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +12,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <section class="section">
+      <div class="container is-fluid">
+        <%= yield %>
+      </div>
+    </section>
+    <footer class="footer">
+    </footer>
   </body>
 </html>
