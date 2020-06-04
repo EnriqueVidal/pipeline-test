@@ -1,7 +1,16 @@
-import * as React from "react"
+import * as React from 'react';
 
-const HelloReact = ({ name }) => (
-  <h1 className="title"> Hello {name}!</h1>
+interface Props {
+  name: string;
+ }
+
+const HelloReact = ({ name }: Props) => (
+  <h1 className="title">
+    {' '}
+    Hello
+    {name}
+    !
+  </h1>
 );
 
-export default HelloReact
+export default HelloReact;

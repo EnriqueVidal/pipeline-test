@@ -1,6 +1,9 @@
 {
   "name": "pipeline",
   "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx app/javascript"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.10.1",
     "@rails/actioncable": "^6.0.0",
@@ -22,6 +25,15 @@
   "version": "0.1.0",
   "devDependencies": {
     "@babel/preset-typescript": "^7.10.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
     "webpack-dev-server": "^3.11.0"
   }
 }
