@@ -3,7 +3,7 @@
 class PipelinesService
   include HTTParty
 
-  base_uri 'https://api.pipelinedeals.com/api/v3'
+  base_uri "https://api.pipelinedeals.com/api/v3"
 
   def initialize(query = {})
     @options = {

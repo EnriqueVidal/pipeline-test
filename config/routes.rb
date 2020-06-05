@@ -1,7 +1,13 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  namespace :api do
+    namespace :v1 do
+      resource :deals, only: [] do
+        get '/(:page)(/:per_page)', to: 'deals#index', format: :json
+      end
+    end
+  end
 
-  get '/(:page)', to: 'deals#index'
+  get "/(:page)(/:per_page)", to: "deals#index"
 end
