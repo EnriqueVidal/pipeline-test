@@ -9,15 +9,11 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application' %>
+    <%= yield :styled_components_styles %>
   </head>
 
   <body>
-    <%= render 'layouts/navigation' %>
-    <section class="section">
-      <div class="container is-fluid">
-        <%= yield %>
-      </div>
-    </section>
+    <%= yield %>
     <footer class="footer">
     </footer>
   </body>

@@ -11,7 +11,7 @@ module Deals
 
   def service
     @service ||= PipelinesService.new({
-                                        pages: params[:page] || 1,
+                                        page: params[:page] || 1,
                                         per_page: params[:per_page] || 10
                                       })
   end

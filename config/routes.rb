@@ -9,5 +9,5 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/(:page)(/:per_page)", to: "deals#index"
+  get "/(:page)", to: "deals#index"
 end
