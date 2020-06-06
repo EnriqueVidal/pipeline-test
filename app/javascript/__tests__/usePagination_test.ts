@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import usePagination from '../usePagination';
+import usePagination from '../packs/usePagination';
 
 describe('usePagination', () => {
   const initialValue = {

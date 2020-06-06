@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import useTabular from '../useTabular';
+import useTabular from '../packs/useTabular';
 
 describe('useTabular', () => {
   const spaceJam = {

@@ -1,4 +1,4 @@
-import { dig, sort } from '../objectHelper';
+import { dig, sort } from '../packs/objectHelper';
 
 describe('Object dig', () => {
   const objectMock = {
