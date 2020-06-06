@@ -31,7 +31,8 @@ const usePagination = (propsPagination: Pagination): Hook => {
       case 'MOVE_FORWARD':
         return { ...state, page: state.page + 1 };
 
-      default:
+      /* istanbul ignore next */
+      default: // Impossible action with consistent return
         return state;
     }
   },
