@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bar matches snapshot 1`] = `
+<div
+  className="floating-bar columns is-mobile"
+>
+  <div
+    className="column"
+  >
+    <button
+      className="button is-link is-small"
+      disabled={true}
+      onClick={[MockFunction]}
+      type="button"
+    >
+      &lt;
+       
+      Back
+    </button>
+  </div>
+  <div
+    className="column"
+  >
+    <div
+      className="field"
+    >
+      <div
+        className="control is-expanded"
+      >
+        <div
+          className="select is-fullwidth is-small"
+        >
+          <select
+            id="perPage"
+            onChange={[MockFunction]}
+            value={5}
+          >
+            <option
+              value={5}
+            >
+              5
+            </option>
+            <option
+              value={10}
+            >
+              10
+            </option>
+            <option
+              value={15}
+            >
+              15
+            </option>
+            <option
+              value={30}
+            >
+              30
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="column"
+  >
+    <div
+      className="buttons is-right"
+    >
+      <button
+        className="button is-link is-small"
+        disabled={false}
+        onClick={[MockFunction]}
+        type="button"
+      >
+        Forward
+         
+        &gt;
+      </button>
+    </div>
+  </div>
+</div>
+`;

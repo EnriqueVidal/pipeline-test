@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DealRow matches snapshot 1`] = `
+<tr>
+  <td>
+    <strong>
+      3
+    </strong>
+  </td>
+  <td>
+    Ren Amamiya
+  </td>
+  <td>
+    Persona 5
+  </td>
+  <td
+    className="has-text-right"
+  >
+    $
+    99999999999999.00
+  </td>
+  <td>
+    <span
+      className="tag is-primary is-info"
+    >
+      Wont!
+    </span>
+  </td>
+  <td>
+    <progress
+      className="progress is-info"
+      max={100}
+      title="100%"
+      value={100}
+    >
+      100%
+    </progress>
+  </td>
+</tr>
+`;

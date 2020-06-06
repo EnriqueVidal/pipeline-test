@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Deals matches snapshot 1`] = `
+<div
+  className="deals"
+>
+  <div
+    className="floating-bar columns is-mobile"
+  >
+    <div
+      className="column"
+    >
+      <button
+        className="button is-link is-small"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        &lt;
+         
+        Back
+      </button>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="field"
+      >
+        <div
+          className="control is-expanded"
+        >
+          <div
+            className="select is-fullwidth is-small"
+          >
+            <select
+              id="perPage"
+              onChange={[Function]}
+              value={1}
+            >
+              <option
+                value={5}
+              >
+                5
+              </option>
+              <option
+                value={10}
+              >
+                10
+              </option>
+              <option
+                value={15}
+              >
+                15
+              </option>
+              <option
+                value={30}
+              >
+                30
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div
+        className="buttons is-right"
+      >
+        <button
+          className="button is-link is-small"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
+        >
+          Forward
+           
+          &gt;
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="content"
+  >
+    <table
+      className="table is-striped is-fullwidth"
+    >
+      <thead>
+        <tr>
+          <th>
+            <a
+              href="#"
+              onClick={[Function]}
+              title="Sort ASC"
+            >
+              ID
+            </a>
+          </th>
+          <th>
+            User
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            <a
+              href="#"
+              onClick={[Function]}
+              title="Sort ASC"
+            >
+              Value
+            </a>
+          </th>
+          <th>
+            Stage
+          </th>
+          <th>
+            <a
+              href="#"
+              onClick={[Function]}
+              title="Sort ASC"
+            >
+              Progress
+            </a>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>
+              1
+            </strong>
+          </td>
+          <td>
+            Michael Jordan
+          </td>
+          <td>
+            SpaceJam
+          </td>
+          <td
+            className="has-text-right"
+          >
+            $
+            1000000000.00
+          </td>
+          <td>
+            <span
+              className="tag is-primary is-info"
+            >
+              Won!
+            </span>
+          </td>
+          <td>
+            <progress
+              className="progress is-info"
+              max={100}
+              title="100%"
+              value={100}
+            >
+              100%
+            </progress>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
