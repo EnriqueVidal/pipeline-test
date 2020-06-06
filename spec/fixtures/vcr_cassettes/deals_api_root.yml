@@ -1,0 +1,114 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pipelinedeals.com/api/v3/deals.json?api_key=G5mZccexXgchNkAYOBlQ&page=1&per_page=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Jun 2020 16:55:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1147'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d15ebdd4786a8f6ac27d0b827997dae461591462502; expires=Mon, 06-Jul-20
+        16:55:02 GMT; path=/; domain=.pipelinedeals.com; HttpOnly; SameSite=Lax
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"6a06458595e06abebc13999ecf2ec477"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '10'
+      X-Ratelimit-Remaining:
+      - '10'
+      X-Ratelimit-Reset:
+      - '1591462503'
+      X-Request-Id:
+      - 01b7feba-ca5d-4129-9323-2dc9e66e31d0
+      X-Runtime:
+      - '0.126618'
+      X-Xss-Protection:
+      - 1; mode=block
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 032c27b6ef00007fdedba97200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 59f3a89e4fa27fde-SAN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entries":[{"id":12807214,"name":"King-Cremin","summary":null,"user_id":220090,"created_at":"2016/04/11
+        13:46:00 -0400","updated_at":"2016/04/11 13:46:00 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727384,"probability":50,"status":null,"expected_close_date":null,"closed_time":null,"expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"44049.04","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":4404904,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727384,"percent":50,"name":"Presentation"},"people":[],"currency":{"id":1,"name":"American
+        Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]},{"id":12807211,"name":"Moore,
+        Trantow and Senger","summary":null,"user_id":220090,"created_at":"2016/04/11
+        13:46:00 -0400","updated_at":"2016/04/11 13:46:00 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727384,"probability":50,"status":null,"expected_close_date":null,"closed_time":null,"expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"33908.89","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":3390889,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727384,"percent":50,"name":"Presentation"},"people":[],"currency":{"id":1,"name":"American
+        Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]},{"id":12807208,"name":"Kuvalis,
+        Jakubowski and Deckow","summary":null,"user_id":220090,"created_at":"2016/04/11
+        13:46:00 -0400","updated_at":"2016/04/11 13:46:00 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727387,"probability":75,"status":null,"expected_close_date":null,"closed_time":null,"expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"76300.9","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":7630090,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727387,"percent":75,"name":"Negotiation"},"people":[],"currency":{"id":1,"name":"American
+        Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]},{"id":12807205,"name":"Lakin-Reynolds","summary":null,"user_id":220090,"created_at":"2016/04/11
+        13:46:00 -0400","updated_at":"2016/04/11 13:46:00 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727387,"probability":75,"status":null,"expected_close_date":null,"closed_time":null,"expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"6276.93","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":627693,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727387,"percent":75,"name":"Negotiation"},"people":[],"currency":{"id":1,"name":"American
+        Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]},{"id":12807202,"name":"Will
+        LLC","summary":null,"user_id":220090,"created_at":"2016/04/11 13:46:00 -0400","updated_at":"2016/04/11
+        13:46:00 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727381,"probability":25,"status":null,"expected_close_date":null,"closed_time":null,"expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"78181.64","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":7818164,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727381,"percent":25,"name":"Request
+        for Info"},"people":[],"currency":{"id":1,"name":"American Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]},{"id":12807199,"name":"Breitenberg,
+        Marks and Corwin","summary":null,"user_id":220090,"created_at":"2016/04/11
+        13:46:00 -0400","updated_at":"2016/04/11 13:46:00 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727390,"probability":100,"status":null,"expected_close_date":null,"closed_time":"2016/04/11
+        13:46:00 -0400","expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"59096.93","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":5909693,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727390,"percent":100,"name":"Won"},"people":[],"currency":{"id":1,"name":"American
+        Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]},{"id":12807196,"name":"Hansen-Willms","summary":null,"user_id":220090,"created_at":"2016/04/11
+        13:46:00 -0400","updated_at":"2016/04/11 13:46:00 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727384,"probability":50,"status":null,"expected_close_date":null,"closed_time":null,"expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"82788.88","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":8278888,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727384,"percent":50,"name":"Presentation"},"people":[],"currency":{"id":1,"name":"American
+        Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]},{"id":12807193,"name":"Hayes,
+        Larkin and Wisozk","summary":null,"user_id":220090,"created_at":"2016/04/11
+        13:45:59 -0400","updated_at":"2016/04/11 13:45:59 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727381,"probability":25,"status":null,"expected_close_date":null,"closed_time":null,"expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"69569.43","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":6956943,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727381,"percent":25,"name":"Request
+        for Info"},"people":[],"currency":{"id":1,"name":"American Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]},{"id":12807190,"name":"Kreiger
+        and Sons","summary":null,"user_id":220090,"created_at":"2016/04/11 13:45:59
+        -0400","updated_at":"2016/04/11 13:45:59 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727387,"probability":75,"status":null,"expected_close_date":null,"closed_time":null,"expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"52238.89","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":5223889,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727387,"percent":75,"name":"Negotiation"},"people":[],"currency":{"id":1,"name":"American
+        Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]},{"id":12807187,"name":"Little
+        LLC","summary":null,"user_id":220090,"created_at":"2016/04/11 13:45:59 -0400","updated_at":"2016/04/11
+        13:45:59 -0400","is_archived":false,"is_example":null,"source_id":null,"primary_contact_id":null,"deal_stage_id":727375,"probability":0,"status":null,"expected_close_date":null,"closed_time":"2016/04/11
+        13:45:59 -0400","expected_close_date_event_id":null,"company_id":null,"import_id":null,"value":"97355.87","deal_loss_reason_id":null,"deal_loss_reason_notes":null,"is_sample":false,"revenue_type_id":null,"deal_pipeline_id":201025,"created_by_user_id":null,"deal_won_reason_id":null,"deal_won_reason_notes":null,"updated_by_user_id":null,"person_ids":[],"shared_user_ids":[],"value_in_cents":9735587,"user":{"id":220090,"first_name":"Glengarry","last_name":"Ross"},"deal_stage":{"id":727375,"percent":0,"name":"Lost"},"people":[],"currency":{"id":1,"name":"American
+        Dollar","code":"USD","symbol":"$"},"deal_pipeline":{"id":201025,"name":"Sales
+        Pipeline","default":true},"deal_loss_reason":null,"deal_won_reason":null,"primary_contact":null,"company":null,"revenue_type":null,"deal_copy":null,"created_by_user":null,"updated_by_user":null,"collaborators":[],"custom_fields":{"custom_label_1279429":null},"deal_product_lines_ids":[]}],"pagination":{"page":1,"page_var":"page","per_page":10,"pages":10,"total":100}}'
+  recorded_at: Sat, 06 Jun 2020 16:55:02 GMT
+recorded_with: VCR 6.0.0

@@ -13,6 +13,10 @@ class PipelinesService
     }
   end
 
+  def safe_query
+    @options[:query].except(:api_key)
+  end
+
   def fetch(resource)
     self.class.get(resource, @options)
   end
