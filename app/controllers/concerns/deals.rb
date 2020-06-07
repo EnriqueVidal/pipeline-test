@@ -3,10 +3,20 @@
 module Deals
   extend ActiveSupport::Concern
 
+  FALLBACK_RESPONSE = {
+    entries: [],
+    pagination: {
+      page: 0,
+      per_page: 10,
+      pages: 0,
+      total: 0
+    }
+  }.freeze
+
   def fetch_deals
     service.fetch("/deals.json")
   rescue StandardError
-    []
+    FALLBACK_RESPONSE
   end
 
   def service

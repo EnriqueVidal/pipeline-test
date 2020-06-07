@@ -1,5 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import useTabular from '../packs/useTabular';
+import { Deal } from '../packs/pipelines.td';
 
 describe('useTabular', () => {
   const spaceJam = {
@@ -30,27 +31,27 @@ describe('useTabular', () => {
   const stealYourHeart = [persona5];
 
   it('it starts with ASC direction', () => {
-    const { result } = renderHook(() => useTabular(initialValue));
+    const { result } = renderHook(() => useTabular<Deal>(initialValue));
     expect(result.current.direction).toBe('ASC');
   });
 
   it('sorts by property in any direction', () => {
-    const { result } = renderHook(() => useTabular(initialValue));
+    const { result } = renderHook(() => useTabular<Deal>(initialValue));
 
     /* sort ASC */
     act(() => result.current.sortColumn('value'));
-    expect(result.current.currentDeals).toEqual(initialValue.reverse());
+    expect(result.current.currentEntries).toEqual(initialValue.reverse());
 
     /* sort DESC */
     act(() => result.current.sortColumn('value'));
-    expect(result.current.currentDeals).toEqual(initialValue);
+    expect(result.current.currentEntries).toEqual(initialValue);
   });
 
-  it('replaces currentDeals', () => {
-    const { result } = renderHook(() => useTabular(initialValue));
+  it('replaces currentEntries', () => {
+    const { result } = renderHook(() => useTabular<Deal>(initialValue));
 
-    expect(result.current.currentDeals).toEqual(initialValue);
-    act(() => result.current.setDeals(stealYourHeart));
-    expect(result.current.currentDeals).toEqual(stealYourHeart);
+    expect(result.current.currentEntries).toEqual(initialValue);
+    act(() => result.current.setEntries(stealYourHeart));
+    expect(result.current.currentEntries).toEqual(stealYourHeart);
   });
 });

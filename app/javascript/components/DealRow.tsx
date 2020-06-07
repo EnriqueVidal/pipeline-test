@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Deal } from '../packs/useTabular';
+import { Deal } from '../packs/pipelines.td';
 
 interface Props {
   deal: Deal;

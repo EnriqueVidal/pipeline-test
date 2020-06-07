@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Pagination } from '../packs/usePagination';
+import { Pagination } from '../packs/pipelines.td';
 
 interface Props {
  handleMoveBack: React.MouseEventHandler<HTMLButtonElement>;

@@ -1,30 +1,29 @@
 import * as React from 'react';
 import Bar from './Bar';
 import DealRow from './DealRow';
-import useTabular, { Deal } from '../packs/useTabular';
-import usePagination, { Pagination } from '../packs/usePagination';
+import useTabular from '../packs/useTabular';
+import usePagination from '../packs/usePagination';
 import { navigate } from '../packs/navigation';
+import { Deal, Pagination } from '../packs/pipelines.td';
 
 interface Props {
- deals: {
-   entries: Deal[],
-   pagination: Pagination,
- },
+  entries: Deal[],
+  pagination: Pagination,
 }
 
 const BASE_API_URL = '/api/v1/deals';
 
-const Deals = ({ deals }: Props) => {
+const Deals = ({ entries: entriesProp, pagination: paginationProp }: Props) => {
   const {
-    currentDeals, direction, setDeals, sortColumn,
-  } = useTabular(deals.entries);
+    currentEntries, direction, setEntries, sortColumn,
+  } = useTabular<Deal>(entriesProp);
 
   const {
     changeLimit,
     moveBack,
     moveForward,
     pagination,
-  } = usePagination(deals.pagination);
+  } = usePagination(paginationProp);
 
   const { page, per_page: perPage } = pagination;
 
@@ -43,7 +42,7 @@ const Deals = ({ deals }: Props) => {
           return;
         }
 
-        setDeals(entries);
+        setEntries(entries);
       });
 
     return () => abortController.abort();
@@ -106,16 +105,12 @@ const Deals = ({ deals }: Props) => {
             </tr>
           </thead>
           <tbody>
-            {currentDeals.map((deal) => <DealRow key={deal.id} deal={deal} />)}
+            {currentEntries.map((deal) => <DealRow key={deal.id} deal={deal} />)}
           </tbody>
         </table>
       </div>
     </div>
   );
-};
-
-Deals.defaultProps = {
-  deals: [],
 };
 
 export default Deals;

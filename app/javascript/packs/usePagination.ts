@@ -1,11 +1,5 @@
 import * as React from 'react';
-
-export interface Pagination {
- page: number;
- per_page: number;
- pages: number;
- total: number;
-}
+import { Pagination } from './pipelines.td';
 
 interface Action {
   type: 'CHANGE_LIMIT' | 'MOVE_BACK' | 'MOVE_FORWARD';

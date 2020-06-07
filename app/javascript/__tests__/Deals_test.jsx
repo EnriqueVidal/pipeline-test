@@ -19,7 +19,8 @@ describe('Deals', () => {
     pages: 1,
   };
 
-  const firstPage = { entries: [spaceJam], pagination };
+  const entries = [spaceJam];
+  const firstPage = { entries, pagination };
 
   global.fetch = jest.fn(async () => ({
     json: () => Promise.resolve(firstPage),
@@ -27,14 +28,14 @@ describe('Deals', () => {
 
   it('matches snapshot', () => {
     const tree = renderer
-      .create(<Deals deals={firstPage} />)
+      .create(<Deals entries={entries} pagination={pagination} />)
       .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
   it('mounts', () => {
-    const wrapper = mount(<Deals deals={firstPage} />);
+    const wrapper = mount(<Deals entries={entries} pagination={pagination} />);
     expect(wrapper).not.toBeNull();
   });
 });

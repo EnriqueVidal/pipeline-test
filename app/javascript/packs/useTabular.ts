@@ -1,48 +1,28 @@
 import * as React from 'react';
 import { sort } from './objectHelper';
 
-interface User {
- id: number;
- first_name: string;
- last_name: string;
-}
-
-interface Stage {
-  id: number;
-  percent: number;
-  name: string;
-}
-
-export interface Deal {
-  id: number;
-  name: string;
-  deal_stage: Stage;
-  user: User;
-  value: string;
- }
-
-interface Hook {
-  currentDeals: Deal[];
+interface Hook<T> {
+  currentEntries: T[];
   direction: string;
-  setDeals: (deals: Deal[]) => void;
+  setEntries: (deals: T[]) => void;
   sortColumn: (column: string) => void;
 }
 
-const useTabular = (propDeals: Deal[]): Hook => {
-  const [currentDeals, setDeals] = React.useState(propDeals);
+const useTabular = <T>(propEntries: T[]): Hook<T> => {
+  const [currentEntries, setEntries] = React.useState(propEntries);
   const [direction, setDirection] = React.useState('ASC');
 
   const sortColumn = (column: string) => {
     const sortAs = direction === 'DESC' ? 'ASC' : 'DESC';
 
-    setDeals((deals) => sort(deals, column, direction));
+    setEntries((entries) => sort(entries, column, direction));
     setDirection(sortAs);
   };
 
   return {
-    currentDeals,
+    currentEntries,
     direction,
-    setDeals,
+    setEntries,
     sortColumn,
   };
 };
