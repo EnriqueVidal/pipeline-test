@@ -1,20 +1,50 @@
 {
   "name": "pipeline",
   "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx app/javascript",
+    "test": "jest app/javascript"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.10.1",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "turbolinks": "^5.2.0"
+    "react_ujs": "^2.6.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.10.1",
+    "@testing-library/react": "^10.2.1",
+    "@testing-library/react-hooks": "^3.3.0",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^25.2.3",
+    "@types/react-test-renderer": "^16.9.2",
+    "@types/styled-components": "^5.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "jest": "^26.0.1",
+    "react-test-renderer": "^16.13.1",
     "webpack-dev-server": "^3.11.0"
   }
 }

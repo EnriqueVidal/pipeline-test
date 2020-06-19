@@ -1,24 +1,8 @@
-# README
+## Running
+Copy `.env_example` to `.env` and update the `API_KEY` variable to a valid key then
+run both `rails s` and `bin/webpack-dev-server` from the project root folder.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Running tests
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- `rake spec` for ruby tests
+- `yarn tests` for javascript tests

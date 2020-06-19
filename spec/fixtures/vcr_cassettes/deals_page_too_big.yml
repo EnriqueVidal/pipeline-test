@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pipelinedeals.com/api/v3/deals.json?api_key=G5mZccexXgchNkAYOBlQ&page=10000000&per_page=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Jun 2020 16:23:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '87'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1cca8f1a5f84f3f3b05d57a41de35be21591460630; expires=Mon, 06-Jul-20
+        16:23:50 GMT; path=/; domain=.pipelinedeals.com; HttpOnly; SameSite=Lax
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"91303fd187b564070f658c10039bcb15"
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - DENY
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '10'
+      X-Ratelimit-Remaining:
+      - '10'
+      X-Ratelimit-Reset:
+      - '1591460631'
+      X-Request-Id:
+      - 4b329413-e49b-4b35-96d8-c68a1691777b
+      X-Runtime:
+      - '0.065773'
+      X-Xss-Protection:
+      - 1; mode=block
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 032c0b289900007fe43f243200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 59f37aedcd377fe4-SAN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"entries":[],"pagination":{"page":10000000,"page_var":"page","per_page":10,"pages":10,"total":100}}'
+  recorded_at: Sat, 06 Jun 2020 16:23:50 GMT
+recorded_with: VCR 6.0.0
